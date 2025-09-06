@@ -12,3 +12,7 @@ for mac i had to run
 
 
 it will create the exe in the DIST folder. Now copy it to resources/native/windows
+
+
+
+mvn clean package -Pwindows

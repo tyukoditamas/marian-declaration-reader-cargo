@@ -6,7 +6,7 @@
 
     <groupId>org.app</groupId>
     <artifactId>declaration-reader-sls-cargo</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -43,7 +43,7 @@
     </dependencies>
 
     <build>
-        <finalName>declaration-reader-sls-cargo</finalName>
+        <finalName>declaration-reader-sls-cargo-v2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -213,7 +213,7 @@
                                     <input>${project.build.directory}</input>
                                     <mainJar>${project.build.finalName}.jar</mainJar>
                                     <mainClass>org.app.Main</mainClass>
-                                    <name>declaration-reader-sls-cargo</name>
+                                    <name>declaration-reader-sls-cargo-v2</name>
                                     <addModules>javafx.controls,javafx.fxml</addModules>
                                 </configuration>
                             </execution>
@@ -287,7 +287,7 @@
                                     <input>${project.build.directory}</input>
                                     <mainJar>${project.build.finalName}.jar</mainJar>
                                     <mainClass>org.app.Main</mainClass>
-                                    <name>declaration-reader-sls-cargo</name>
+                                    <name>declaration-reader-sls-cargo-v2</name>
                                     <addModules>javafx.controls,javafx.fxml</addModules>
                                 </configuration>
                             </execution>

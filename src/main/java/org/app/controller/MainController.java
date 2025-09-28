@@ -101,14 +101,13 @@ public class MainController {
                 String[] primary = {
                         String.valueOf(counter),        // nr.crt
                         "RO33706828",                   // CIF/CNP
-                        "SLS Cargo",                    //client
+                        dto.getNumeExportatorComplet(),                    //client
                         "EUR",                          // deviz
                         "PREST. VAMALE IMP/EXP",        // produs
                         "",                             // Serie produs
                         "1",                            // Cant
                         "BUC",                          // UM
-                        // Pret FTVA logic
-                        "43",
+                        "50",                           // Pret FTVA logic
                         "21",                           // cota TVA
                         "DVE:" + dto.getMrn() + "/" + dto.getDataDeclaratie().replace("-", ".")
                                 + "/" + dto.getNrContainer() + "-" + dto.getNumeExportator(),          // nota produs

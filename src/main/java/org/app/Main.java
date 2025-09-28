@@ -14,7 +14,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(
                 Objects.requireNonNull(getClass().getResource("/org/app/view/MainView.fxml"))
         );
-        primaryStage.setTitle("Declaration reader SLS Cargo");
+        primaryStage.setTitle("Declaration reader SLS Cargo V2");
         Scene scene = new Scene(root, 700, 500);
         scene.getStylesheets().add(
                 Objects.requireNonNull(getClass().getResource("/org/app/style.css")).toExternalForm()

@@ -11,7 +11,9 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ExportDeclaration {
     private String numeExportator;
+    private String numeExportatorComplet;
     private String mrn;
     private String dataDeclaratie;
     private String nrContainer;
+    private String cif;
 }

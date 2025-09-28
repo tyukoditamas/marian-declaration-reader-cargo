@@ -59,6 +59,20 @@ def extract_fields(text):
                     data["numeExportator"] = m.group(1)
             break
 
+    for i, l in enumerate(lines):
+        if "Exportator [13 01]" in l:
+            if i + 1 < len(lines):
+                data["numeExportatorComplet"] = lines[i + 1].strip()
+            break
+
+    for line in lines:
+        if "Expeditor [13 02]" in line:
+            # Match: Nr, optional dot, optional spaces, colon, optional spaces, then the value
+            m = re.search(r'Nr\.?\s*:\s*([^\s]+)', line)
+            if m:
+                data["cif"] = m.group(1)
+            break
+
     # 2. mrn
     mrn = find_mrn(lines)
     if mrn:
